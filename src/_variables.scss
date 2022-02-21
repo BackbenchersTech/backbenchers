@@ -1,0 +1,24 @@
+:root {
+  // colors
+  --color--background: #fffefc;
+  --color--text-dark: #111111;
+  --color--text-medium: rgba(0, 0, 0, 0.6);
+  --color--text-light: rgba(0, 0, 0, 0.4);
+  --color--border-regular: rgba(0, 0, 0, 0.1);
+
+  // spacing
+  --base-padding: 20px;
+  --spacing-xs: 20px;
+  --spacing-s: 40px;
+  --spacing-m: 40px;
+  --spacing-l: 60px;
+  --spacing-xl: 60px;
+}
+
+@media screen and (min-width: 600px) {
+  :root {
+    --base-padding: 40px;
+    --spacing-l: 80px;
+    --spacing-xl: 80px;
+  }
+}

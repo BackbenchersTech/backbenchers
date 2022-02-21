@@ -1,0 +1,7 @@
+# Ignore artifacts and node_modules
+node_modules/
+.cache/
+public
+
+# System files
+.DS_Store
