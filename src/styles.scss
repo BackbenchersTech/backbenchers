@@ -1,0 +1,101 @@
+@import 'variables';
+
+// Global styles
+html,
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: var(--color--background);
+  color: var(--color--text-dark);
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+p {
+  font-size: 19px;
+  line-height: 1.41;
+  margin: 0 0 13px 0;
+}
+
+a,
+a:hover,
+a:active,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  padding: 0;
+}
+
+hr {
+  border: none;
+  margin: 0;
+  display: block;
+  border-top: 1px solid var(--color--border-regular);
+}
+
+// Atomic classes
+.text-align-center {
+  text-align: center;
+}
+
+a:hover {
+  &.global-logo {
+    text-decoration: none;
+  }
+}
+
+.global-logo {
+  font-family: 'Pacifico', Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.title {
+  font-size: 38px;
+  line-height: 1.15;
+}
+
+.global-title-m {
+  font-size: 21px;
+  line-height: 1.35;
+  font-weight: bold;
+}
+
+.global-contain {
+  padding: 0 var(--base-padding);
+}
+
+.global-margin-l {
+  margin: var(--spacing-l) 0;
+}
+
+@media screen and (min-width: 600px) {
+  .global-title-m {
+    font-size: 30px;
+    line-height: 1.3;
+  }
+}
