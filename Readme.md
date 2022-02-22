@@ -1,54 +1,41 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+# 🚀 Backbenchers
 
-## 🚀 Quick start
+Source code for the backbenchers website.
 
-1.  **Create a Gatsby site.**
+## Development
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+Navigate into the site’s directory and start it up.
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+```shell
+cd backbenchers/
+npm run develop
+```
 
-2.  **Start developing.**
+## Deployment
 
-    Navigate into your new site’s directory and start it up.
+### Build a production build
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+```shell
+gatsby build
+```
 
-3.  **Open the code and start customizing!**
+### Deploy to localhost through gatsby OR firebase
 
-    Your site is now running at http://localhost:8000!
+```shell
+gatsby serve
+firebase emulators:start
+```
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+### Deploy to a preview stage with firebase
 
-4.  **Learn more**
+Replace CHANNEL_ID.
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+```shell
+firebase hosting:channel:deploy CHANNEL_ID
+```
 
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+### Deploy to live site
 
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+```shell
+firebase deploy
+```
