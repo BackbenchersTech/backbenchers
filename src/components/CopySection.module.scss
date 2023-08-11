@@ -1,0 +1,76 @@
+.copy {
+  --titleFont: var(--titleWeight) var(--titleFontSize) / var(--titleLineHeight)
+    var(--titleFontFamily);
+  --bodyFont: var(--fontWeightNormal) var(--bodyFontSize, 18px) /
+    var(--bodyLineHeight, 1.555555556) var(--fontFamily);
+  --captionFont: var(--fontWeightBold) var(--captionFontSize, 18px) /
+    var(--captionLineHeight, 1.555555556) var(--fontFamily);
+
+  display: grid;
+  row-gap: var(--rowGap);
+  color: var(--color--text-dark);
+
+  .copyHeader {
+    display: grid;
+    row-gap: var(--rowGap);
+  }
+
+  .copyIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 48px;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .copyBody {
+    font: var(--bodyFont);
+  }
+
+  .copyTitle {
+    font: var(--titleFont);
+  }
+
+  .copyCaption {
+    font: var(--captionFont);
+  }
+
+  &.variant__hero {
+    --rowGap: var(--rowGapMedium);
+    --titleWeight: 700;
+    --titleFontSize: 76px;
+    --titleLineHeight: 1.1;
+    --titleFontFamily: Outfit, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+      Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+      sans-serif;
+    --bodyFontSize: 24px;
+    --bodyLineHeight: 1.5;
+  }
+
+  &.variant__section {
+    --rowGap: var(--rowGapMedium);
+    --titleWeight: 700;
+    --titleFontSize: 34px;
+    --titleLineHeight: 1.29;
+    --titleFontFamily: Outfit, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+      Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+      sans-serif;
+  }
+
+  &.variant__detail {
+    --rowGap: var(--rowGapNormal);
+    --titleWeight: 425;
+    --titleFontSize: 15px;
+    --titleLineHeight: 1.6;
+    --titleFontFamily: Outfit, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+      Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+      sans-serif;
+    --bodyFontSize: 15px;
+    --bodyLineHeight: 1.6;
+  }
+}

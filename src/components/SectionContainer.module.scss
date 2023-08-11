@@ -1,0 +1,25 @@
+.sectionContainer {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+
+  .layoutContainer {
+    max-width: var(--layout-max-width);
+    width: 100%;
+    margin: 0 16px;
+  }
+
+  .layout {
+    padding: 128px 0;
+    color: var(--color--text-dark);
+  }
+
+  &.noPadding > .layoutContainer > .layout {
+    padding: 0;
+  }
+
+  &.noMargin > .layoutContainer {
+    margin: 0;
+  }
+}

@@ -7,9 +7,7 @@ const Layout = ({ children }) => {
     <div className="layout">
       <Navbar />
 
-      <main>
-        <div className="global-contain">{children}</div>
-      </main>
+      <main>{children}</main>
 
       <Footer />
     </div>

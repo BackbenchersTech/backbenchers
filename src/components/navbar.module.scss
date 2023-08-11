@@ -1,10 +1,31 @@
-.header-wrapper {
-  padding: 0 20px;
+.navbar {
+  position: absolute;
+  z-index: var(--navbar-z-index);
+  width: 100%;
+  color: #fff;
+}
 
-  .inner {
+.logo {
+  font-family: var(--headingFontFamily);
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: center;
+
+  .layoutContainer {
+    max-width: var(--layout-max-width);
+    width: 100%;
+    margin: 0 16px;
+  }
+
+  .header {
     height: 60px;
     display: flex;
     align-items: center;
-    border-bottom: 1px solid var(--color--border-regular);
   }
 }

@@ -1,0 +1,14 @@
+.listItem {
+  position: relative;
+  padding-left: 24px;
+
+  svg {
+    position: absolute;
+    top: 5px;
+    left: 0;
+
+    g {
+      fill: var(--color--text-dark);
+    }
+  }
+}
